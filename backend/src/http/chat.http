@@ -1,0 +1,21 @@
+# baseURL
+@baseURL = http://localhost:5000
+
+###
+# Create or fetch One to One Chat
+POST {{ baseURL }}/chat/
+Content-Type: application/json
+
+{
+    "UserId": "6457904929199a77140774a2",
+
+}
+###
+# Fetch All chats for a user
+GET {{ baseURL }}/chat/
+Content-Type: application/json
+
+{
+    "email": "example@email.com",
+	"password": "password"
+}
